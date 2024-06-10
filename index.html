@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seatopia World</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> Seatopia World. </a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#tickets">tickets</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="image">
+        <img src="image/home.jpg" alt="" />
+      </div>
+
+      <div class="content">
+        <h3>Seatopia World is the world's largest aquarium with 50,000 species of marine animals.</h3>
+        <p>
+            Kunjungi Seatopia World untuk pengalaman tak terlupakan bersama keajaiban bawah laut!
+        </p>
+        <a href="https://www.instagram.com/nadiamhzk?igsh=MXdmN3Bpc2V1eG04dw==" target="_blank" class="btn">
+            contact us <span class="fas fa-chevron-right"></span>
+          </a>
+          
+      </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+      <h1 class="heading"><span>buy</span> now</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="image/ticket.jpg" alt="" />
+        </div>
+
+        <form action="">
+          <h3>Ticket purchase data</h3>
+            <label for="nama">Nama</label><br />
+            <input
+              type="text"
+              placeholder="Nama Anda"
+              id="nama"
+              class="box"
+              required
+            /><br />
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              placeholder="Email"
+              id="email"
+              class="box"
+              required
+            /><br />
+            <label for="tanggal">Tanggal</label><br />
+            <input
+              type="date"
+              class="box"
+              id="tanggal"
+              required
+            /><br />
+
+            <label for="jenis_tiket">Jenis Tiket</label><br />
+            <select id="jenis_tiket" class="box" required>
+              <option hidden=""></option>
+                <option value="VVIP">VVIP</option>
+              <option value="VIP">VIP</option>
+              <option value="Reguler">Reguler</option></select
+            ><br />
+
+            <p>Metode Pembayaran</p>
+            <div class="payment-method">
+              <input
+                type="radio"
+                name="metode_pembayaran"
+                id="kartu_kredit"
+                value="Kartu Kredit"
+                required
+              />
+              <label for="kartu_kredit">Kartu Kredit</label>
+              <input
+                type="radio"
+                name="metode_pembayaran"
+                id="transfer_bank"
+                value="Transfer Bank"
+                required
+              />
+              <label for="transfer_bank">Transfer Bank</label>
+              <input
+                type="radio"
+                name="metode_pembayaran"
+                id="paypal"
+                value="PayPal"
+                required
+              />
+              <label for="paypal">PayPal</label>
+
+              <br /> 
+              <br /> 
+              <label for="informasi">Informasi Tambahan</label><br />
+              <textarea
+                placeholder="Tulis informasi tambahan disini"
+                name="informasi"
+                id="informasi"
+                cols="30"
+                rows="5"
+                class="box"
+              ></textarea
+              ><br />
+              <input type="submit" value="Book Now" onclick="kirimData()" class="btn" />
+
+        </form>
+       
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
